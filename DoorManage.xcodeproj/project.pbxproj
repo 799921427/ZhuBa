@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		009193C046CD2BCE06937528 /* Pods_DoorManage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F72E9A2E836313064B3867 /* Pods_DoorManage.framework */; };
+		009193C046CD2BCE06937528 /* Pods_DoorManage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F72E9A2E836313064B3867 /* Pods_DoorManage.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B912EFAC2062118F007677A6 /* MyTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B912EFAB2062118F007677A6 /* MyTabViewController.swift */; };
+		B958FB20206D281B0039BC17 /* RegistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B958FB1F206D281B0039BC17 /* RegistViewController.swift */; };
 		B95E14A3205BA8D40013A3B9 /* ZDMInterfaceConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95E14A2205BA8D40013A3B9 /* ZDMInterfaceConnection.swift */; };
 		B9704E3D206957AA00ABD668 /* MyTableViewCell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9704E3B206957AA00ABD668 /* MyTableViewCell3.xib */; };
 		B9704E3E20695B1500ABD668 /* MyTableViewCell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9704E3A206957AA00ABD668 /* MyTableViewCell3.swift */; };
@@ -59,6 +60,7 @@
 /* Begin PBXFileReference section */
 		A92A4E6B0890BE62702FB035 /* Pods-DoorManage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoorManage.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoorManage/Pods-DoorManage.release.xcconfig"; sourceTree = "<group>"; };
 		B912EFAB2062118F007677A6 /* MyTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabViewController.swift; sourceTree = "<group>"; };
+		B958FB1F206D281B0039BC17 /* RegistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistViewController.swift; sourceTree = "<group>"; };
 		B95E14A2205BA8D40013A3B9 /* ZDMInterfaceConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZDMInterfaceConnection.swift; sourceTree = "<group>"; };
 		B9704E3A206957AA00ABD668 /* MyTableViewCell3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell3.swift; sourceTree = "<group>"; };
 		B9704E3B206957AA00ABD668 /* MyTableViewCell3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell3.xib; sourceTree = "<group>"; };
@@ -175,10 +177,10 @@
 				B9BC0159204A6BC5000475B4 /* CALayer+UIColor.m */,
 				B95E14A2205BA8D40013A3B9 /* ZDMInterfaceConnection.swift */,
 				B9BC015D204A8DDD000475B4 /* FirstViewController.swift */,
-				B9EEF24A2058FAC1009209D9 /* EveryDayView.swift */,
 				B99AB890206A60A300A49D1D /* MenuDetailView.swift */,
 				B9BC3D5A204F8D6300CD8003 /* PersonalViewController.swift */,
 				B9BC3D61205012C100CD8003 /* HeadTableViewCell.swift */,
+				B9EEF24A2058FAC1009209D9 /* EveryDayView.swift */,
 				B9BC3D6B20502DB800CD8003 /* TitleView.swift */,
 				B9BC3D66205016C500CD8003 /* TitleView.xib */,
 				B9BC3D62205012C100CD8003 /* HeadTableViewCell.xib */,
@@ -187,6 +189,7 @@
 				B9BC012420430730000475B4 /* AppDelegate.swift */,
 				B9BC012620430730000475B4 /* ViewController.swift */,
 				B9BC012820430730000475B4 /* Main.storyboard */,
+				B958FB1F206D281B0039BC17 /* RegistViewController.swift */,
 				B912EFAB2062118F007677A6 /* MyTabViewController.swift */,
 				B9EEF24C2059024F009209D9 /* MyTableViewCell1.swift */,
 				B9EEF24D2059024F009209D9 /* MyTableViewCell1.xib */,
@@ -439,6 +442,7 @@
 				B9EEF24B2058FAC1009209D9 /* EveryDayView.swift in Sources */,
 				B9EEF24E2059024F009209D9 /* MyTableViewCell1.swift in Sources */,
 				B9BC3D63205012C100CD8003 /* HeadTableViewCell.swift in Sources */,
+				B958FB20206D281B0039BC17 /* RegistViewController.swift in Sources */,
 				B9BC3D5B204F8D6300CD8003 /* PersonalViewController.swift in Sources */,
 				B95E14A3205BA8D40013A3B9 /* ZDMInterfaceConnection.swift in Sources */,
 				B9BC3D60204F90C100CD8003 /* UIViewController+ZDMConfigure.m in Sources */,

@@ -9,6 +9,9 @@
 import UIKit
 
 class Cource: NSObject {
-//    var courceName : 
+    var courceName : String!
+    var manufacture : String!
+    var material : String!
+    var imgURL : URL!
 
 }

@@ -73,7 +73,7 @@ class EveryDayView: UIViewController,UITableViewDelegate,UITableViewDataSource {
             let cell1 : MyTableViewCell1 = tableView.dequeueReusableCell(withIdentifier: "Cell1") as! MyTableViewCell1
             cell1.selectedBackgroundView = UIView()
             cell1.selectedBackgroundView?.backgroundColor = UIColor(red:243/255.0,green:154/255.0,blue:6/255.0,alpha:0.4)
-            cell1.menuImg = UIImageView(image: UIImage(named: "http://www.honeybees.top:8080/honey/image/m17.png"))
+           // let img = loadImg(imgURL: "http://www.honeybees.top:8080/honey/image/m16.png",imgView: cell1.menuImg)
             print("mmp1")
             return cell1
         }
@@ -97,6 +97,30 @@ class EveryDayView: UIViewController,UITableViewDelegate,UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
+    }
+    func loadImg(imgURL : String,imgView : UIImageView) -> Void
+    {
+        let picURL = URL(string: imgURL)
+        
+        let session = URLSession(configuration: .default)
+        let downloadPicTask = session.dataTask(with: picURL!) {(data,response,error) in
+            
+            if let e = error
+            {
+                print("Error \(e)")
+            }
+            else
+            {
+                if let imgData = data
+                {
+                    let img = UIImage(data:imgData)
+                    DispatchQueue.main.async {
+                        imgView.image = img
+                    }
+                }
+                
+            }
+        }
     }
     /*
     // MARK: - Navigation
