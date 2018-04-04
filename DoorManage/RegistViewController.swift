@@ -10,7 +10,53 @@ import UIKit
 
 class RegistViewController: UIViewController {
 
+    @IBOutlet weak var sendBtn: UIButton!
     @IBOutlet weak var backView: UIView!
+    private var timer : Timer?
+    @IBAction func sendMsg(_ sender: Any) {
+        self.remainingSeconds = 59
+        self.isCounting = !self.isCounting
+        sendBtn.isEnabled = false
+    }
+    private var isCounting:Bool = false
+    {
+        willSet(newValue)
+        {   if newValue
+            {
+                timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(RegistViewController.updateTimer), userInfo: nil, repeats: true)
+            }
+            else
+            {
+                timer?.invalidate()
+                timer = nil
+            }
+        }
+                
+    }
+    private var remainingSeconds:Int = 0{
+        willSet(newSeconds)
+        {
+            let seconds = newSeconds % 60
+            sendBtn.setTitle("\(seconds)秒后重新获取", for: .normal)
+        }
+    }
+    
+    
+   
+    
+    @objc func updateTimer(timer: Timer) {// 更新时间
+        if remainingSeconds > 0 {
+            remainingSeconds -= 1
+        }
+        
+        if remainingSeconds == 0 {
+            sendBtn.setTitle("获取验证码", for: UIControlState.normal)
+            sendBtn.isEnabled = true
+            isCounting = !isCounting
+            timer.invalidate()
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initView()

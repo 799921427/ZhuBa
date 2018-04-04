@@ -14,6 +14,33 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var bannerView: LLCycleScrollView!
     @IBOutlet weak var tab1: UITabBarItem!
     
+    @IBAction func loadMenuData(_ sender: Any) {
+        print("&&&&&&")
+        var cArr : [Cource]?
+        ZDMInterfaceConnection().connentNet(method: "select/selectdinner.rest", params: [:], block: {
+            (fail,dataMsg,courceArr) in
+            cArr = courceArr
+            print(fail)
+            print(dataMsg)
+            print(courceArr)
+        })
+        let everyDayView : EveryDayView = self.storyboard?.instantiateViewController(withIdentifier: "EveryDayView") as! EveryDayView
+        everyDayView.courceArr = cArr
+//        for c in cArr!
+//        {
+//            print(c.foodname)
+//        }
+        everyDayView.intNum = 1
+        self.navigationController?.pushViewController(everyDayView, animated: true)
+//        let jsonString = "{\"id\":12345,\"color\":\"black\",\"name\":\"cat\"}"
+//
+//        let jsonArrayString: String? = "[{\"name\":\"Bob\",\"id\":\"1\"}, {\"name\":\"Lily\",\"id\":\"2\"}, {\"name\":\"Lucy\",\"id\":\"3\"}]"
+//        if let cats = [Cat].deserialize(from: jsonArrayString) {
+//            cats.forEach({ (cat) in
+//                print(cat?.name)
+//            })
+//        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         

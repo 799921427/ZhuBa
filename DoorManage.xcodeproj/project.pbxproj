@@ -58,7 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A92A4E6B0890BE62702FB035 /* Pods-DoorManage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoorManage.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoorManage/Pods-DoorManage.release.xcconfig"; sourceTree = "<group>"; };
+		8BD853554D85FAFB97D40FE7 /* Pods-DoorManage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoorManage.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoorManage/Pods-DoorManage.release.xcconfig"; sourceTree = "<group>"; };
 		B912EFAB2062118F007677A6 /* MyTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabViewController.swift; sourceTree = "<group>"; };
 		B958FB1F206D281B0039BC17 /* RegistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistViewController.swift; sourceTree = "<group>"; };
 		B95E14A2205BA8D40013A3B9 /* ZDMInterfaceConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZDMInterfaceConnection.swift; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 		B9EEF25020595360009209D9 /* MyTableViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell2.swift; sourceTree = "<group>"; };
 		B9EEF25120595361009209D9 /* MyTableViewCell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell2.xib; sourceTree = "<group>"; };
 		C6F72E9A2E836313064B3867 /* Pods_DoorManage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoorManage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FCA6D509DCC0AE8F7C05B58A /* Pods-DoorManage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoorManage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoorManage/Pods-DoorManage.debug.xcconfig"; sourceTree = "<group>"; };
+		D46538E89C9F7E9D164BC317 /* Pods-DoorManage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoorManage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoorManage/Pods-DoorManage.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,8 +131,8 @@
 		3D2D8182983D27DA6F852743 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FCA6D509DCC0AE8F7C05B58A /* Pods-DoorManage.debug.xcconfig */,
-				A92A4E6B0890BE62702FB035 /* Pods-DoorManage.release.xcconfig */,
+				D46538E89C9F7E9D164BC317 /* Pods-DoorManage.debug.xcconfig */,
+				8BD853554D85FAFB97D40FE7 /* Pods-DoorManage.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -406,6 +406,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-DoorManage/Pods-DoorManage-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMRefresh/GTMRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/LLCycleScrollView/LLCycleScrollView.framework",
 			);
@@ -413,6 +414,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LLCycleScrollView.framework",
 			);
@@ -503,6 +505,7 @@
 /* Begin XCBuildConfiguration section */
 		B9BC014720430730000475B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D46538E89C9F7E9D164BC317 /* Pods-DoorManage.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -549,7 +552,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -560,6 +563,7 @@
 		};
 		B9BC014820430730000475B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BD853554D85FAFB97D40FE7 /* Pods-DoorManage.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -600,7 +604,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -610,7 +614,7 @@
 		};
 		B9BC014A20430730000475B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FCA6D509DCC0AE8F7C05B58A /* Pods-DoorManage.debug.xcconfig */;
+			baseConfigurationReference = D46538E89C9F7E9D164BC317 /* Pods-DoorManage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -631,7 +635,7 @@
 		};
 		B9BC014B20430730000475B4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A92A4E6B0890BE62702FB035 /* Pods-DoorManage.release.xcconfig */;
+			baseConfigurationReference = 8BD853554D85FAFB97D40FE7 /* Pods-DoorManage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -651,6 +655,7 @@
 		};
 		B9BC014D20430730000475B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D46538E89C9F7E9D164BC317 /* Pods-DoorManage.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -667,6 +672,7 @@
 		};
 		B9BC014E20430730000475B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BD853554D85FAFB97D40FE7 /* Pods-DoorManage.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -683,6 +689,7 @@
 		};
 		B9BC015020430730000475B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D46538E89C9F7E9D164BC317 /* Pods-DoorManage.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -698,6 +705,7 @@
 		};
 		B9BC015120430730000475B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BD853554D85FAFB97D40FE7 /* Pods-DoorManage.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

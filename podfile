@@ -4,4 +4,6 @@ target 'DoorManage' do
 pod 'GTMRefresh'
 pod 'LLCycleScrollView'
 pod 'AFNetworking'
+pod 'HandyJSON','4.0.0-beta.1'
+
 end

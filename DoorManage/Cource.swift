@@ -7,11 +7,28 @@
 //
 
 import UIKit
+import HandyJSON
+class Cource: HandyJSON{
+    var id : Int?
+    var foodname : String?
+    var manufacture : String?
+    var material : String?
+    var photo : String?
+    var type : Int?
+    var foodtype : Int?
+    var fooddetailtype : Int?
+    var tips : String?
 
-class Cource: NSObject {
-    var courceName : String!
-    var manufacture : String!
-    var material : String!
-    var imgURL : URL!
+    required init(){
 
+    }
 }
+//import UIKit
+//import HandyJSON
+//class Cat: HandyJSON {
+//    var id: Int?
+//var name: String?
+//
+//    required init() {}
+//}
+
