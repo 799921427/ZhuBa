@@ -1,15 +1,16 @@
 //
-//  RegistViewController.swift
+//  ForgetViewController.swift
 //  DoorManage
 //
-//  Created by 张德茂 on 2018/3/29.
+//  Created by 张德茂 on 2018/4/6.
 //  Copyright © 2018年 张德茂. All rights reserved.
 //
 
 import UIKit
 
-class RegistViewController: UIViewController {
+class ForgetViewController: UIViewController {
 
+    
     @IBOutlet weak var line3: UILabel!
     @IBOutlet weak var line2: UILabel!
     @IBOutlet weak var line1: UILabel!
@@ -28,16 +29,16 @@ class RegistViewController: UIViewController {
     {
         willSet(newValue)
         {   if newValue
-            {
-                timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(RegistViewController.updateTimer), userInfo: nil, repeats: true)
-            }
-            else
-            {
-                timer?.invalidate()
-                timer = nil
+        {
+            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ForgetViewController.updateTimer), userInfo: nil, repeats: true)
+        }
+        else
+        {
+            timer?.invalidate()
+            timer = nil
             }
         }
-                
+        
     }
     private var remainingSeconds:Int = 0{
         willSet(newSeconds)
@@ -48,7 +49,7 @@ class RegistViewController: UIViewController {
     }
     
     
-   
+    
     
     @objc func updateTimer(timer: Timer) {// 更新时间
         if remainingSeconds > 0 {
@@ -62,13 +63,13 @@ class RegistViewController: UIViewController {
             timer.invalidate()
         }
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initView()
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -99,10 +100,10 @@ class RegistViewController: UIViewController {
         self.sendBtn.layer.borderWidth = 1
         self.sendBtn.layer.cornerRadius = 3
         
-//        inView.layer.borderColor = lineColor.cgColor
-//        inView.layer.borderWidth = 1
-//        self.backView.layer.borderWidth = 1;
-//        self.backView.layer.borderColor = UIColor.gray.cgColor
+        //        inView.layer.borderColor = lineColor.cgColor
+        //        inView.layer.borderWidth = 1
+        //        self.backView.layer.borderWidth = 1;
+        //        self.backView.layer.borderColor = UIColor.gray.cgColor
         
     }
     

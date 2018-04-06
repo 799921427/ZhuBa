@@ -13,6 +13,7 @@
 		B95E14A3205BA8D40013A3B9 /* ZDMInterfaceConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95E14A2205BA8D40013A3B9 /* ZDMInterfaceConnection.swift */; };
 		B9704E3D206957AA00ABD668 /* MyTableViewCell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9704E3B206957AA00ABD668 /* MyTableViewCell3.xib */; };
 		B9704E3E20695B1500ABD668 /* MyTableViewCell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9704E3A206957AA00ABD668 /* MyTableViewCell3.swift */; };
+		B973E24020773024007758E7 /* ForgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B973E23F20773024007758E7 /* ForgetViewController.swift */; };
 		B9833F81204ED5990083FB7D /* HeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9833F80204ED5990083FB7D /* HeadView.swift */; };
 		B9833F85204ED5E00083FB7D /* HeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9833F83204ED5E00083FB7D /* HeadView.xib */; };
 		B99AB891206A60A400A49D1D /* MenuDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99AB890206A60A300A49D1D /* MenuDetailView.swift */; };
@@ -64,6 +65,7 @@
 		B95E14A2205BA8D40013A3B9 /* ZDMInterfaceConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZDMInterfaceConnection.swift; sourceTree = "<group>"; };
 		B9704E3A206957AA00ABD668 /* MyTableViewCell3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell3.swift; sourceTree = "<group>"; };
 		B9704E3B206957AA00ABD668 /* MyTableViewCell3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell3.xib; sourceTree = "<group>"; };
+		B973E23F20773024007758E7 /* ForgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetViewController.swift; sourceTree = "<group>"; };
 		B9833F80204ED5990083FB7D /* HeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadView.swift; sourceTree = "<group>"; };
 		B9833F83204ED5E00083FB7D /* HeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeadView.xib; sourceTree = "<group>"; };
 		B99AB890206A60A300A49D1D /* MenuDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDetailView.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				B9BC013020430730000475B4 /* Info.plist */,
 				B9BC0154204A6A28000475B4 /* DoorManage-Bridging-Header.h */,
 				B99AB892206A760C00A49D1D /* Cource.swift */,
+				B973E23F20773024007758E7 /* ForgetViewController.swift */,
 			);
 			path = DoorManage;
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 				B9BC012520430730000475B4 /* AppDelegate.swift in Sources */,
 				B9833F81204ED5990083FB7D /* HeadView.swift in Sources */,
 				B9BC015A204A6BC5000475B4 /* CALayer+UIColor.m in Sources */,
+				B973E24020773024007758E7 /* ForgetViewController.swift in Sources */,
 				B9EEF25220595361009209D9 /* MyTableViewCell2.swift in Sources */,
 				B9BC015E204A8DDD000475B4 /* FirstViewController.swift in Sources */,
 				B9BA240B206247E900A74840 /* MenuViewController.swift in Sources */,
