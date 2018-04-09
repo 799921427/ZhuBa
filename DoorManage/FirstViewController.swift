@@ -17,13 +17,13 @@ class FirstViewController: UIViewController {
     @IBAction func loadMenuData(_ sender: Any) {
         print("&&&&&&")
         var cArr : [Cource]?
-        ZDMInterfaceConnection().connentNet(method: "select/selectdinner.rest", params: [:], block: {
-            (fail,dataMsg,courceArr) in
-            cArr = courceArr
-            print(fail)
-            print(dataMsg)
-            print(courceArr)
-        })
+//        ZDMInterfaceConnection().connentNet(method: "select/selectdinner.rest", params: [:], block: {
+//            (fail,dataMsg,courceArr) in
+//            cArr = courceArr
+//            print(fail)
+//            print(dataMsg)
+//            print(courceArr)
+//        })
         let everyDayView : EveryDayView = self.storyboard?.instantiateViewController(withIdentifier: "EveryDayView") as! EveryDayView
         everyDayView.courceArr = cArr
 //        for c in cArr!

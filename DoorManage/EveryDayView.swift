@@ -58,12 +58,12 @@ class EveryDayView: UIViewController,UITableViewDelegate,UITableViewDataSource {
        // self.hidesBottomBarWhenPushed = false
         let netConnect = ZDMInterfaceConnection()
         var dic:[String:String]?
-//        netConnect.connentNet(method: "news_getTypes", params: dic, block: {
-//            (success,msg,dict) in
-//            print(success)
-//            print(msg)
-//            print(dict)
-//        })
+        netConnect.connentNet(method: "news_getTypes", params: dic, block: {
+            (success,msg,dict) in
+            print(success)
+            print(msg)
+            print(dict)
+        })
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
