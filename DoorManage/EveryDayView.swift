@@ -9,12 +9,15 @@
 import UIKit
 
 class EveryDayView: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    var courceArr : [Cource]?
+    var intNum : Int?
     @IBOutlet weak var myTableView: UITableView!
     
 
     @IBOutlet weak var listTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(intNum)
         self.tabBarController?.tabBar.isHidden = false
         self.createTitle("煮吧", titleImage: "logo", backImage:"nav", rightImgae: "search")
         let nib = UINib(nibName:"MyTableViewCell1",bundle:nil);
@@ -26,6 +29,8 @@ class EveryDayView: UIViewController,UITableViewDelegate,UITableViewDataSource {
         
         self.myTableView.delegate = self
         self.myTableView.dataSource = self
+        
+       // print(courceArr![0].foodname)
         
 //        self.myTableView.estimatedRowHeight = 150
 //        self.myTableView.rowHeight = UITableViewAutomaticDimension
@@ -50,15 +55,15 @@ class EveryDayView: UIViewController,UITableViewDelegate,UITableViewDataSource {
         self.hidesBottomBarWhenPushed = true
         
         self.navigationController?.pushViewController(menuController, animated: true)
-        self.hidesBottomBarWhenPushed = false
+       // self.hidesBottomBarWhenPushed = false
         let netConnect = ZDMInterfaceConnection()
         var dic:[String:String]?
-        netConnect.connentNet(method: "news_getTypes", params: dic, block: {
-            (success,msg,dict) in
-            print(success)
-            print(msg)
-            print(dict)
-        })
+//        netConnect.connentNet(method: "news_getTypes", params: dic, block: {
+//            (success,msg,dict) in
+//            print(success)
+//            print(msg)
+//            print(dict)
+//        })
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

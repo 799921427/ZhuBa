@@ -13,6 +13,7 @@
 		B95E14A3205BA8D40013A3B9 /* ZDMInterfaceConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95E14A2205BA8D40013A3B9 /* ZDMInterfaceConnection.swift */; };
 		B9704E3D206957AA00ABD668 /* MyTableViewCell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9704E3B206957AA00ABD668 /* MyTableViewCell3.xib */; };
 		B9704E3E20695B1500ABD668 /* MyTableViewCell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9704E3A206957AA00ABD668 /* MyTableViewCell3.swift */; };
+		B973E24020773024007758E7 /* ForgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B973E23F20773024007758E7 /* ForgetViewController.swift */; };
 		B9833F81204ED5990083FB7D /* HeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9833F80204ED5990083FB7D /* HeadView.swift */; };
 		B9833F85204ED5E00083FB7D /* HeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9833F83204ED5E00083FB7D /* HeadView.xib */; };
 		B99AB891206A60A400A49D1D /* MenuDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99AB890206A60A300A49D1D /* MenuDetailView.swift */; };
@@ -58,12 +59,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A92A4E6B0890BE62702FB035 /* Pods-DoorManage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoorManage.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoorManage/Pods-DoorManage.release.xcconfig"; sourceTree = "<group>"; };
+		8BD853554D85FAFB97D40FE7 /* Pods-DoorManage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoorManage.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoorManage/Pods-DoorManage.release.xcconfig"; sourceTree = "<group>"; };
 		B912EFAB2062118F007677A6 /* MyTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabViewController.swift; sourceTree = "<group>"; };
 		B958FB1F206D281B0039BC17 /* RegistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistViewController.swift; sourceTree = "<group>"; };
 		B95E14A2205BA8D40013A3B9 /* ZDMInterfaceConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZDMInterfaceConnection.swift; sourceTree = "<group>"; };
 		B9704E3A206957AA00ABD668 /* MyTableViewCell3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell3.swift; sourceTree = "<group>"; };
 		B9704E3B206957AA00ABD668 /* MyTableViewCell3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell3.xib; sourceTree = "<group>"; };
+		B973E23F20773024007758E7 /* ForgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetViewController.swift; sourceTree = "<group>"; };
 		B9833F80204ED5990083FB7D /* HeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadView.swift; sourceTree = "<group>"; };
 		B9833F83204ED5E00083FB7D /* HeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeadView.xib; sourceTree = "<group>"; };
 		B99AB890206A60A300A49D1D /* MenuDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDetailView.swift; sourceTree = "<group>"; };
@@ -99,7 +101,7 @@
 		B9EEF25020595360009209D9 /* MyTableViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell2.swift; sourceTree = "<group>"; };
 		B9EEF25120595361009209D9 /* MyTableViewCell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell2.xib; sourceTree = "<group>"; };
 		C6F72E9A2E836313064B3867 /* Pods_DoorManage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoorManage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FCA6D509DCC0AE8F7C05B58A /* Pods-DoorManage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoorManage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoorManage/Pods-DoorManage.debug.xcconfig"; sourceTree = "<group>"; };
+		D46538E89C9F7E9D164BC317 /* Pods-DoorManage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoorManage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoorManage/Pods-DoorManage.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,8 +133,8 @@
 		3D2D8182983D27DA6F852743 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FCA6D509DCC0AE8F7C05B58A /* Pods-DoorManage.debug.xcconfig */,
-				A92A4E6B0890BE62702FB035 /* Pods-DoorManage.release.xcconfig */,
+				D46538E89C9F7E9D164BC317 /* Pods-DoorManage.debug.xcconfig */,
+				8BD853554D85FAFB97D40FE7 /* Pods-DoorManage.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -179,10 +181,10 @@
 				B9BC015D204A8DDD000475B4 /* FirstViewController.swift */,
 				B99AB890206A60A300A49D1D /* MenuDetailView.swift */,
 				B9BC3D5A204F8D6300CD8003 /* PersonalViewController.swift */,
+				B9BC3D66205016C500CD8003 /* TitleView.xib */,
 				B9BC3D61205012C100CD8003 /* HeadTableViewCell.swift */,
 				B9EEF24A2058FAC1009209D9 /* EveryDayView.swift */,
 				B9BC3D6B20502DB800CD8003 /* TitleView.swift */,
-				B9BC3D66205016C500CD8003 /* TitleView.xib */,
 				B9BC3D62205012C100CD8003 /* HeadTableViewCell.xib */,
 				B9833F80204ED5990083FB7D /* HeadView.swift */,
 				B9833F83204ED5E00083FB7D /* HeadView.xib */,
@@ -202,6 +204,7 @@
 				B9BC013020430730000475B4 /* Info.plist */,
 				B9BC0154204A6A28000475B4 /* DoorManage-Bridging-Header.h */,
 				B99AB892206A760C00A49D1D /* Cource.swift */,
+				B973E23F20773024007758E7 /* ForgetViewController.swift */,
 			);
 			path = DoorManage;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-DoorManage/Pods-DoorManage-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMRefresh/GTMRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/LLCycleScrollView/LLCycleScrollView.framework",
 			);
@@ -413,6 +417,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LLCycleScrollView.framework",
 			);
@@ -435,6 +440,7 @@
 				B9BC012520430730000475B4 /* AppDelegate.swift in Sources */,
 				B9833F81204ED5990083FB7D /* HeadView.swift in Sources */,
 				B9BC015A204A6BC5000475B4 /* CALayer+UIColor.m in Sources */,
+				B973E24020773024007758E7 /* ForgetViewController.swift in Sources */,
 				B9EEF25220595361009209D9 /* MyTableViewCell2.swift in Sources */,
 				B9BC015E204A8DDD000475B4 /* FirstViewController.swift in Sources */,
 				B9BA240B206247E900A74840 /* MenuViewController.swift in Sources */,
@@ -503,6 +509,7 @@
 /* Begin XCBuildConfiguration section */
 		B9BC014720430730000475B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D46538E89C9F7E9D164BC317 /* Pods-DoorManage.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -549,7 +556,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -560,6 +567,7 @@
 		};
 		B9BC014820430730000475B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BD853554D85FAFB97D40FE7 /* Pods-DoorManage.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -600,7 +608,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -610,7 +618,7 @@
 		};
 		B9BC014A20430730000475B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FCA6D509DCC0AE8F7C05B58A /* Pods-DoorManage.debug.xcconfig */;
+			baseConfigurationReference = D46538E89C9F7E9D164BC317 /* Pods-DoorManage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -631,7 +639,7 @@
 		};
 		B9BC014B20430730000475B4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A92A4E6B0890BE62702FB035 /* Pods-DoorManage.release.xcconfig */;
+			baseConfigurationReference = 8BD853554D85FAFB97D40FE7 /* Pods-DoorManage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -651,6 +659,7 @@
 		};
 		B9BC014D20430730000475B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D46538E89C9F7E9D164BC317 /* Pods-DoorManage.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -667,6 +676,7 @@
 		};
 		B9BC014E20430730000475B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BD853554D85FAFB97D40FE7 /* Pods-DoorManage.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -683,6 +693,7 @@
 		};
 		B9BC015020430730000475B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D46538E89C9F7E9D164BC317 /* Pods-DoorManage.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -698,6 +709,7 @@
 		};
 		B9BC015120430730000475B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BD853554D85FAFB97D40FE7 /* Pods-DoorManage.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

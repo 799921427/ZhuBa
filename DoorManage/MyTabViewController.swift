@@ -12,10 +12,14 @@ class MyTabViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //self.tabBarController?.selectedIndex = 1
         // Do any additional setup after loading the view.
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+        print("222222")
+        //self.tabBarController?.selectedIndex = 1
+        print(self.tabBarController?.selectedIndex)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
